@@ -1,13 +1,14 @@
 function init () {
-                //Create a stage by getting a reference to the canvas
-                var stage = new createjs.Stage("demoCanvas");
-                //Create a Shape DisplayObject.
-                circle = new createjs.Shape();
-                circle.graphics.beginFill("red").drawCircle(0, 0, 40);
-                //Set position of Shape instance.
-                circle.x = circle.y = 50;
-                //Add Shape instance to stage display list.
-                stage.addChild(circle);
-                //Update stage will render next frame
-                stage.update();
-            }
+    //Create a stage by getting a reference to the canvas
+    var stage = new createjs.Stage("demoCanvas");
+    //Create a Shape DisplayObject.
+    var paddle = new createjs.Shape();
+    paddle.graphics.beginFill("blue").drawRect(0, 0, 150, 20);
+    //Set position of Shape instance.
+    paddle.x = 50;
+    paddle.y = 250;
+    //Add Shape instance to stage display list.
+    stage.addChild(paddle);
+    //Update stage will render next frame
+    stage.update();
+}
