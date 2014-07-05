@@ -5,7 +5,7 @@ function init () {
     var paddle = new createjs.Shape();
     paddle.graphics.beginFill("blue").drawRect(0, 0, 150, 20);
     //Set position of Shape instance.
-    paddle.x = 50;
+    paddle.x = 250;
     paddle.y = 250;
     //Add Shape instance to stage display list.
     stage.addChild(paddle);
