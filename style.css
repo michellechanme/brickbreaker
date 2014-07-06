@@ -1,20 +1,28 @@
 body {
 	background-color: white;
 	font-family: "Open Sans", helvetica, sans-serif;
+	font-size: 18;
 }
 
 ul {
 	margin: 0;
 	padding: 10px;
-	
 }
 
 li {
 	float: left;
 	list-style-type: none;
+	padding: 20px;
+
 }
+
 #demoCanvas {
 	border: black solid 1px;
+	display: inline-block;
+}
+
+.canvas {
+	text-align: center;
 }
 
 .cf:before,
@@ -25,4 +33,3 @@ li {
 
 .cf:after {
     clear: both;
-}
