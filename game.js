@@ -44,12 +44,21 @@ function init () {
 
         var ball = new createjs.Shape();
         ball.graphics.beginFill("red").drawCircle(0, 0, 8);
-        ball.x = 250;
-        ball.y = 352;
+        ball.x = paddle.x + 50;
+        ball.y = paddle.y - 10;
         stage.addChild(ball);
 
-        ball +=10;
-
         stage.update();
+
+        //Create a Shape DisplayObject.
+        var brick = new createjs.Shape();
+        paddle.graphics.beginFill("white").drawRect(0, 0, 60, 15);
+        brick.x = 30;
+        brick.y = 30;
+        stage.addChild(brick);
+
+        //Update stage will render next frame
+        stage.update();
+
     });
 }
