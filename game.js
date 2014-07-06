@@ -38,7 +38,7 @@ function init () {
                 }
             }
 
-            stage.update();
+        stage.update();
 
         });
 
@@ -47,6 +47,8 @@ function init () {
         ball.x = 250;
         ball.y = 352;
         stage.addChild(ball);
+
+        ball +=10;
 
         stage.update();
     });

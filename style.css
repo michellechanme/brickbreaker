@@ -1,19 +1,31 @@
 body {
 	background-color: white;
 	font-family: "Open Sans", helvetica, sans-serif;
-	font-size: 18;
+}
+
+header {
+	text-align: center;
+	font-size: 50px;
+	padding-top: 40px;
+	position: relative;
 }
 
 ul {
 	margin: 0;
 	padding: 20px;
+	font-size: 18;
 }
 
 li {
-	
 	float: left;
+	/*display: inline;*/
 	list-style-type: none;
 	padding: 20px;
+	position: center;
+}
+
+#navbar {
+	margin: 0 auto;
 }
 
 #demoCanvas {
