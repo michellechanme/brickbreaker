@@ -24,8 +24,10 @@ li {
 }
 
 .header {
-	padding-left: 315px;
+	padding-left: 235px;
 	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 #demoCanvas {
