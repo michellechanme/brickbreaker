@@ -4,10 +4,25 @@ body {
 }
 
 ul {
-	display: inline;
-	padding: 10;
+	margin: 0;
+	padding: 10px;
+	
 }
 
+li {
+	float: left;
+	list-style-type: none;
+}
 #demoCanvas {
 	border: black solid 1px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }
