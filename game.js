@@ -7,7 +7,7 @@ function init () {
         
         //Create a Shape DisplayObject.
         var paddle = new createjs.Shape();
-        paddle.graphics.beginFill("white").drawRect(0, 0, 100, 15);
+        paddle.graphics.beginFill("black").drawRect(0, 0, 100, 15);
         //Set position of Shape instance.
         paddle.x = 200;
         paddle.y = 360;
@@ -43,7 +43,7 @@ function init () {
         });
 
         var ball = new createjs.Shape();
-        ball.graphics.beginFill("red").drawCircle(0, 0, 8);
+        ball.graphics.beginFill("black").drawCircle(0, 0, 8);
         ball.x = paddle.x + 50;
         ball.y = paddle.y - 10;
         stage.addChild(ball);

@@ -21,6 +21,8 @@ li {
 	margin-bottom: 0;
 	padding: 0;
 	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 .header {
@@ -37,7 +39,7 @@ li {
 
 .canvas {
 	text-align: center;
-	background-color: #3366CC
+	background-color: #E0E0E0
 }
 
 .cf:before,
