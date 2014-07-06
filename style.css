@@ -33,7 +33,9 @@ p {
 }
 
 #demoCanvas {
-	border: white solid 1px;
+	border: white solid 8px;
+	border-top: none;
+	border-bottom: none;
 	display: inline-block;
 }
 

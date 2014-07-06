@@ -10,7 +10,7 @@ function init () {
         paddle.graphics.beginFill("black").drawRect(0, 0, 100, 15);
         //Set position of Shape instance.
         paddle.x = 160;
-        paddle.y = 410;
+        paddle.y = 415;
         //Add Shape instance to stage display list.
         stage.addChild(paddle);
         //Update stage will render next frame
@@ -23,7 +23,8 @@ function init () {
             
             // if left arrow is pressed
             if (37 === event.keyCode) {
-                if (paddle.x <= 300 + 20 && paddle.x >= 0) {
+                if (paddle.x <= 300 && paddle.x >= 0) {
+                    if (paddle.x <= 400 - 10)
                     paddle.x += -20;
                 } 
                 
@@ -31,7 +32,8 @@ function init () {
 
             // if right arrow is pressed
             if (39 === event.keyCode) {
-                if (paddle.x <= 300 - 20 && paddle.x >= 0 || paddle.x === 0) {
+                if (paddle.x <= 300 - 20 && paddle.x >= 0) {
+                    if (paddle.x <= 390)
                     paddle.x += 20;
                 } 
 
