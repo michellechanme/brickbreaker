@@ -17,16 +17,15 @@ li {
 	position: center;
 }
 
-#navbar {
-	margin-bottom: 0;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
+p {
+	padding-left: 485px;
+	margin: auto;
+	font-size: 12px;
+	letter-spacing: 0.1em;
 }
 
 .header {
-	padding-left: 235px;
+	padding-left: 405px;
 	font-size: 40px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
@@ -39,7 +38,7 @@ li {
 
 .canvas {
 	text-align: center;
-	background-color: #E0E0E0
+	background-color: #D8D8D8 
 }
 
 .cf:before,
