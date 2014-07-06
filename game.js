@@ -9,7 +9,7 @@ function init () {
         var paddle = new createjs.Shape();
         paddle.graphics.beginFill("black").drawRect(0, 0, 100, 15);
         //Set position of Shape instance.
-        paddle.x = 170;
+        paddle.x = 160;
         paddle.y = 410;
         //Add Shape instance to stage display list.
         stage.addChild(paddle);
@@ -33,7 +33,7 @@ function init () {
 
             // if right arrow is pressed
             if (39 === event.keyCode) {
-                if (paddle.x <= 300 && paddle.x >= 0) {
+                if (paddle.x <= 300 - 20 && paddle.x >= 0) {
                     paddle.x += 20;
                 } else if (paddle.x === 0) {
                     paddle.x += 20;
