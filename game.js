@@ -19,22 +19,17 @@ function init () {
             
             // if left arrow is pressed
             if (37 === event.keyCode) {
-                paddle.x += -15;
-            }
-
-                // if A is pressed
-            if (65 === event.keyCode) {
-                paddle.x += -15;
+                if (paddle.x <= 400 - 10 || paddle.x >= 0) {
+                    paddle.x += -10;
+                }
+                
             }
 
             // if right arrow is pressed
             if (39 === event.keyCode) {
-                paddle.x += 15;
-            }
-
-             // if D is pressed
-            if (68 === event.keyCode) {
-                paddle.x += 15;
+                if (paddle.x <= 400 - 10 || paddle.x >= 0) {
+                    paddle.x += 10;
+                }
             }
 
             stage.update();
