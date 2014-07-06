@@ -6,7 +6,7 @@ body {
 
 ul {
 	margin: 0;
-	padding: 10px;
+	padding: 20px;
 }
 
 li {
@@ -17,12 +17,13 @@ li {
 }
 
 #demoCanvas {
-	border: black solid 1px;
+	border: white solid 1px;
 	display: inline-block;
 }
 
 .canvas {
 	text-align: center;
+	background-color: #3366CC
 }
 
 .cf:before,
