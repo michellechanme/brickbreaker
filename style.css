@@ -1,5 +1,11 @@
 body {
 	background-color: white;
+	font-family: "Open Sans", helvetica, sans-serif;
+}
+
+ul {
+	display: inline;
+	padding: 10;
 }
 
 #demoCanvas {
