@@ -23,21 +23,18 @@ function init () {
             
             // if left arrow is pressed
             if (37 === event.keyCode) {
-                if (paddle.x <= 300 && paddle.x >= 0) {
+                if (paddle.x <= 300 + 20 && paddle.x >= 0) {
                     paddle.x += -20;
-                } else if (paddle.x === 0) {
-                    paddle.x += -20;
-                }
+                } 
                 
             }
 
             // if right arrow is pressed
             if (39 === event.keyCode) {
-                if (paddle.x <= 300 - 20 && paddle.x >= 0) {
+                if (paddle.x <= 300 - 20 && paddle.x >= 0 || paddle.x === 0) {
                     paddle.x += 20;
-                } else if (paddle.x === 0) {
-                    paddle.x += 20;
-                }
+                } 
+
             }
 
         stage.update();
@@ -46,6 +43,7 @@ function init () {
 
         var ball = new createjs.Shape();
         ball.graphics.beginFill("black").drawCircle(0, 0, 8);
+
         ball.x = paddle.x + 50;
         ball.y = paddle.y - 10;
         stage.addChild(ball);
@@ -54,7 +52,7 @@ function init () {
 
         //Create a Shape DisplayObject.
         var brick = new createjs.Shape();
-        paddle.graphics.beginFill("white").drawRect(0, 0, 60, 15);
+        paddle.graphics.beginFill("black").drawRect(0, 0, 60, 15);
         brick.x = 30;
         brick.y = 30;
         stage.addChild(brick);
