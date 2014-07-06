@@ -19,7 +19,9 @@ function init () {
             
             // if left arrow is pressed
             if (37 === event.keyCode) {
-                if (paddle.x <= 400 - 10 || paddle.x >= 0) {
+                if (paddle.x <= 400 - 10 && paddle.x >= 0 + 10) {
+                    paddle.x += -10;
+                } else if (paddle.x === 400) {
                     paddle.x += -10;
                 }
                 
@@ -27,7 +29,9 @@ function init () {
 
             // if right arrow is pressed
             if (39 === event.keyCode) {
-                if (paddle.x <= 400 - 10 || paddle.x >= 0) {
+                if (paddle.x <= 400 - 10 && paddle.x >= 0 + 10) {
+                    paddle.x += 10;
+                } else if (paddle.x === 0) {
                     paddle.x += 10;
                 }
             }
