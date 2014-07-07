@@ -3,17 +3,15 @@ body {
 	font-family: "Open Sans", helvetica, sans-serif;
 }
 
-ul {
-	margin: 0;
-	padding: 20px;
-	font-size: 18;
-}
-
-li {
-	/*float: left;*/
-	list-style-type: none;
-	padding: 20px;
-	position: center;
+.header {
+	width: 100px;
+	margin-left: 10px auto 10px auto;
+	padding: 20px 100px 20px 30px;
+	border: 20px;
+	text-align: center;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 p {
@@ -23,13 +21,6 @@ p {
 	margin: auto;
 	font-size: 12px;
 	letter-spacing: 0.1em;
-}
-
-.header {
-	text-align: center;
-	font-size: 40px;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
 }
 
 #demoCanvas {
