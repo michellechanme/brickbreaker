@@ -18,25 +18,19 @@ function init () {
        
         $('body').on("keydown", function( event ) {
             console.log(event.keyCode)
-
-            // CANVAS WIDTH IS 400
             
             // if left arrow is pressed
             if (37 === event.keyCode) {
-                //if (paddle.x <= 300 && paddle.x >= 0) {
-                if (paddle.x > 0) {//if the paddle is not all the way to the left
-                    //if (paddle.x <= 400 - 10)
-                    paddle.x += -20;//move left
+                if (paddle.x > 0) {
+                    paddle.x += -20;
                 } 
                 
             }
 
             // if right arrow is pressed
             if (39 === event.keyCode) {
-                //if (paddle.x <= 300 - 20 && paddle.x >= 0) {
-                if (paddle.x < 300) {//if the passle is not all the way to the right
-                    //if (paddle.x <= 390)
-                    paddle.x += 20;//move right
+                if (paddle.x < 300) {}
+                    paddle.x += 20;
                 } 
 
             }
