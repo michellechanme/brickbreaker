@@ -50,6 +50,42 @@ function init () {
         ball.y = paddle.y - 10;
         stage.addChild(ball);
 
+        // // variables needed to move ball
+        // var ballXSpeed:Number = 10; //X Speed of the Ball
+        // var ballYSpeed:Number = 10; //Y Speed of the Ball
+
+        // // stage.addChild(ballXSpeed);
+        // // stage.addChild(ballYSpeed);
+
+        // // moving the ball
+        // ball.x += ballXSpeed;
+        // ball.y += ballYSpeed;
+
+        // if(ball.x >= Stage.width-ball.width) {
+        // //if the ball hits the right side
+        // //of the screen, then bounce off
+        // ballXSpeed *= -1;
+        // }
+
+        // if(ball.x <= 0){
+        //     //if the ball hits the left side
+        //     //of the screen, then bounce off
+        //     ballXSpeed *= -1;
+        // }
+
+        // if(ball.y >= Stage.height-ball.height){
+        //     //if the ball hits the bottom
+        //     //then bounce up
+        //     ballYSpeed *= -1;
+        // }
+
+        // if(ball.y <= 0){
+        //     //if the ball hits the top
+        //     //then bounce down
+        //     ballYSpeed *= -1;
+        // }
+
+
         stage.update();
 
         //Create a Shape DisplayObject.
