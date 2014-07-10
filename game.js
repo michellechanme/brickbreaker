@@ -17,7 +17,7 @@ function init () {
         stage.update();
        
         $('body').on("keydown", function( event ) {
-            console.log(event.keyCode)
+            console.log(event.keyCode);
             
             // if left arrow is pressed
             if (37 === event.keyCode) {
@@ -29,7 +29,7 @@ function init () {
 
             // if right arrow is pressed
             if (39 === event.keyCode) {
-                if (paddle.x < 300) {}
+                if (paddle.x < 300) {
                     paddle.x += 20;
                 } 
 
