@@ -1,13 +1,15 @@
 body {
 	background-color: white;
 	font-family: "Open Sans", helvetica, sans-serif;
+	margin: auto;
+	padding: auto;
 }
 
 .header {
 	width: 100px;
 	margin-left: 10px auto 10px auto;
 	padding: 20px 100px 20px 30px;
-	border: 20px;
+	border: 50px;
 	text-align: center;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -27,12 +29,12 @@ p {
 	border: white solid 8px;
 	border-top: none;
 	border-bottom: none;
-	display: inline-block;
 }
 
 .canvas {
 	text-align: center;
 	background-color: #D8D8D8
+
 }
 
 .cf:before,

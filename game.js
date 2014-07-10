@@ -9,8 +9,8 @@ function init () {
         var paddle = new createjs.Shape();
         paddle.graphics.beginFill("black").drawRect(0, 0, 100, 15);
         //Set position of Shape instance.
-        paddle.x = 200;
-        paddle.y = 415;
+        paddle.x = 300;
+        paddle.y = 115;
         //Add Shape instance to stage display list.
         stage.addChild(paddle);
         //Update stage will render next frame
@@ -35,7 +35,7 @@ function init () {
 
             }
 
-        stage.update();
+        // stage.update();
 
         });
 
