@@ -5,11 +5,8 @@ body {
 	padding: auto;
 }
 
-.header {
-	width: 100px;
-	margin-left: 10px auto 10px auto;
-	padding: 20px 100px 20px 30px;
-	border: 50px;
+header {
+	padding: 25px;
 	text-align: center;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -19,7 +16,7 @@ body {
 p {
 	padding-left: 930px;
 	padding-right: 30px;
-	padding-top: 22px;
+	padding-top: 38px;
 	margin: auto;
 	font-size: 12px;
 	letter-spacing: 0.1em;
